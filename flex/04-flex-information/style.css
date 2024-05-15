@@ -1,5 +1,7 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  /* Preferred solution */
+  text-align: center;
 }
 
 img {
@@ -23,4 +25,36 @@ img {
   align-items: center;
   justify-content: center;
   background: #eee;
+}
+
+/* SOLUTION */
+.title {
+  /* Using text-align instead of flex to shorten code */
+  text-align: center;
+  margin-bottom: 32px;
+  
+}
+
+.plants {
+  display: flex;
+  gap: 52px;
+  justify-content: center;
+}
+
+.barberry,
+.chili,
+.pepper,
+.saffron {
+  max-width: 200px;
+
+  /* Unnecessary; should've used text-align center on body instead
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
+
+}
+
+.text {
+  text-align: center;
 }

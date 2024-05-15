@@ -20,6 +20,9 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  /* SOLUTION */
+  padding: 15px;
+  display: flex;
 }
 
 .icon {
@@ -33,6 +36,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* SOLUTION */
+  min-width: 42px;
+  margin-right: 15px;
 }
 
 .close-button {
@@ -66,4 +72,18 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+/* SOLUTION */
+.top {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.header {
+  font-size: large;
+  font-weight: bold;
+  margin-right: auto;
 }
