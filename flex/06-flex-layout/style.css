@@ -19,7 +19,8 @@ button {
   border-radius: 8px;
   background: #eee;
   /* SOLUTION */
-  padding: 10px;
+  /* padding: 10px; apparently wrong*/
+  padding: 8px 16px;
 }
 
 input {
@@ -41,14 +42,14 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  gap: 1rem;
+  gap: 16px;
 }
 
-.header {
-  padding: 10px;
+.header,
+.footer {
+  padding: 15px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .content {
@@ -56,12 +57,16 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  flex: auto;
+  /* margin: auto -- the solution I used */
 }
 
 .footer {
+  background-color: #eee;
+}
+/* .footer {
   display: flex;
   padding: 15px;
   background-color: #eee;
   justify-content: space-between;
-}
+} */
